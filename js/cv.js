@@ -5,7 +5,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     uploadForm.addEventListener('submit', (event) => {
       event.preventDefault(); // Prevent form submission
       showMessagePopup();
-      setTimeout(redirectToIndex, 1000); // Redirect after 3 seconds (adjust the delay as needed)
+      setTimeout(redirectToIndex, 6000); // Redirect after 3 seconds (adjust the delay as needed)
     });
   
     function showMessagePopup() {
@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
   
     function redirectToIndex() {
-      window.location.href = 'quiz.html';
+      window.location.href = 'test.html';
     }
   });
   
