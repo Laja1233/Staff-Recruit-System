@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upload CV Page</title>
+  <script src="js/cv.js"></script>
+  <style>
+    #message-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Upload Your CV</h1>
+  <form id="upload-form" enctype="multipart/form-data">
+    <input type="file" id="cv-file" name="cv-file" accept=".pdf,.doc,.docx">
+    <br>
+    <button type="submit" id="upload-btn">Upload</button>
+  </form>
+
+  <div id="message-popup">
+    <p id="message-text">Thank you for uploading your resume.</p>
+  </div>
+</body>
+</html>
